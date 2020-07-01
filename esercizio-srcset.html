@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srcset e sizes</title>
+</head>
+<body>
+    <h1>Proviamo il srcset e sizes</h1>
+<img srcset="film-1700w.jpg 1700w,
+             film-1200w.jpg 1200w,
+             film-1000w.jpg 1000w,
+             film-800w.jpg 800w,
+             film-480w.jpg 480w,
+             film-320w.jpg 320w
+             "
+     sizes="(max-width: 320px) 280px,
+            (max-width: 480px) 440px,
+            1200px"
+            
+     src="film-800w.jpg" alt="test">
+     <!-- src finale è fallback per vecchi browser -->
+</body>
+</html>
